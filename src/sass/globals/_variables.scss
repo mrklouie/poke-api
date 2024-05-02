@@ -1,0 +1,19 @@
+$primary-color: #7d4de1;
+// $secondar-color:
+
+$font-size: (
+  "sm": 0.75rem,
+  "rg": 1rem,
+  "md": 1.5rem,
+  "lg": 2rem,
+  "xlg": 3rem,
+);
+
+$rounded-sm: 0.25rem;
+$rounded-rg: 1rem;
+$rounded-md: 1.5rem;
+$rounded-full: 50%;
+
+@function getFontSize($size) {
+  @return map-get($font-size, $size);
+}
